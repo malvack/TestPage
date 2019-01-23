@@ -35,6 +35,7 @@ h2 {
   text-decoration: none;
   border: 0;
   font-size: 1.1rem;
+  border-radius: 5px;
 }
 
 /* Header Logo */
@@ -135,7 +136,8 @@ nav ul ul li {
 /* Section 1 */
 .section1 {
   grid-area: section1;
-  justify-content: center;
+  margin: auto;
+  min-width: 550px;
 }
 
 .section1 h2 {
@@ -145,7 +147,6 @@ nav ul ul li {
 /* Formulär */
 form {
   display: grid;
-  margin: 3rem;
 }
 
 label {
