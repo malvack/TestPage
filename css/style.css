@@ -149,7 +149,7 @@ footer {
 
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 950px) {
     .wrapper {
         display: grid;
         grid-gap: 0.1rem;
