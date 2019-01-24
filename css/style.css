@@ -11,13 +11,18 @@ body {
 
 .wrapper {
   display: grid;
-  grid-gap: 1rem;
+  grid-gap: 0.2rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
   grid-template-areas:
-    "logo . . menu "
+    "logo logo menu menu "
     "pressbild pressbild pressbild pressbild"
     " presstext presstext presstext presstext"
     " . section1 section1 ."
-    " section2 section2 section3 section3"
+    "section2 section2 section3 section3"
+    "section5 section4 section4 section4"
+    "section6 section6 section6 section7"
+    "section9 section8 section8 section8"
     "footer footer footer footer";
 }
 
@@ -182,6 +187,58 @@ nav ul ul li {
   list-style: none;
 }
 
+/* Section 4 */
+
+.section4 {
+  grid-area: section4;
+  display: grid;
+  min-height: 400px;
+  background: url(../img/bild1.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+/* Section 5 */
+.section5 {
+  grid-area: section5;
+  display: grid;
+}
+
+/* Section 6 */
+.section6 {
+  grid-area: section6;
+  display: grid;
+  min-height: 400px;
+  background: url(../img/bild2.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+/* Section 7 */
+.section7 {
+  grid-area: section7;
+  display: grid;
+}
+
+/* Section 8 */
+.section8 {
+  grid-area: section8;
+  display: grid;
+  min-height: 400px;
+  background: url(../img/bild3.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+/* Section 9 */
+.section9 {
+  grid-area: section9;
+  display: grid;
+}
+
 /* Formulär */
 form {
   display: grid;
@@ -229,12 +286,19 @@ footer {
   .wrapper {
     display: grid;
     grid-gap: 0.1rem;
+    grid-template-columns: 1fr;
     grid-template-areas:
       "logo"
       "menu"
       "section1"
       "section2"
       "section3"
+      "section4"
+      "section5"
+      "section6"
+      "section7"
+      "section8"
+      "section9"
       "pressbild"
       "presstext"
       "footer";
@@ -245,7 +309,7 @@ footer {
     grid-area: logo;
     display: grid;
     text-align: center;
-    font-size: 9rem;
+    font-size: 20vw;
     font-family: "Nunito", sans-serif;
     text-shadow: 0 2px 5px rgba(100, 100, 100, 0.788);
   }
@@ -280,6 +344,18 @@ footer {
   .section3 {
     text-align: center;
   }
+  /* Section 5 */
+  .section5 {
+    text-align: center;
+  }
+  /* Section 7 */
+  .section7 {
+    text-align: center;
+  }
+  /* Section 9 */
+  .section9 {
+    text-align: center;
+  }
 
   nav {
     grid-area: menu;
@@ -291,30 +367,22 @@ footer {
   .wrapper {
     display: grid;
     grid-gap: 0.1rem;
+    grid-template-columns: 1fr;
     grid-template-areas:
       "logo"
       "menu"
       "section1"
       "section2"
       "section3"
+      "section4"
+      "section5"
+      "section6"
+      "section7"
+      "section8"
+      "section9"
       "pressbild"
       "presstext"
       "footer";
-  }
-
-  /* Header Logo */
-  .header-logo h1 {
-    grid-area: logo;
-    display: grid;
-    text-align: center;
-    font-size: 5rem;
-    font-family: "Nunito", sans-serif;
-    text-shadow: 0 2px 5px rgba(100, 100, 100, 0.788);
-  }
-
-  nav {
-    grid-area: menu;
-    margin: 0;
   }
 
   nav ul {
@@ -360,7 +428,21 @@ footer {
   .section3 {
     text-align: center;
   }
-
+  /* Section 5 */
+  .section5 h2 {
+    text-align: center;
+    font-size: 6vw;
+  }
+  /* Section 7 */
+  .section7 h2 {
+    text-align: center;
+    font-size: 6vw;
+  }
+  /* Section 9 */
+  .section9 h2 {
+    text-align: center;
+    font-size: 6vw;
+  }
   form {
     display: grid;
   }
@@ -375,7 +457,7 @@ footer {
     background: #232323;
     font-family: "Nunito", sans-serif;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 4vw;
     text-align: center;
   }
 }
