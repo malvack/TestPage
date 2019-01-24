@@ -17,7 +17,7 @@ body {
     "pressbild pressbild pressbild pressbild"
     " presstext presstext presstext presstext"
     " . section1 section1 ."
-    " . section2 section3 ."
+    " section2 section2 section3 section3"
     "footer footer footer footer";
 }
 
@@ -149,6 +149,22 @@ nav ul ul li {
 .section2 {
   grid-area: section2;
   display: grid;
+  min-height: 400px;
+  background: url(../img/mat.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.section2 p {
+  font-size: 0.8rem;
+  color: #fff;
+  padding: 2rem;
+}
+
+.section2 a {
+  font-size: 0.8rem;
+  color: #fff;
+  text-decoration: none;
 }
 
 /* Section 3 */
@@ -159,6 +175,11 @@ nav ul ul li {
 
 .section3 h2 {
   text-align: center;
+}
+
+.section3 ul {
+  padding: 1rem;
+  list-style: none;
 }
 
 /* Formulär */
@@ -255,6 +276,11 @@ footer {
     text-decoration: none;
   }
 
+  /* Section 3 */
+  .section3 {
+    text-align: center;
+  }
+
   nav {
     grid-area: menu;
     margin: 5px;
@@ -310,6 +336,33 @@ footer {
 
   nav ul li:hover > ul {
     display: inherit;
+  }
+
+  /* Section 1 */
+  .section1 {
+    grid-area: section1;
+    display: grid;
+    min-width: 90%;
+  }
+
+  .section1 h2 {
+    font-size: 2rem;
+  }
+
+  /* Section 2 */
+  .section2 {
+    grid-area: section2;
+    display: grid;
+    width: 100%;
+  }
+
+  /* Section 3 */
+  .section3 {
+    text-align: center;
+  }
+
+  form {
+    display: grid;
   }
 
   /* Footer */
