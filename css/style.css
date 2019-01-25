@@ -212,6 +212,7 @@ nav ul ul li {
 .section5 {
   grid-area: section5;
   display: grid;
+  padding: 1rem;
 }
 
 /* Section 6 */
@@ -229,6 +230,7 @@ nav ul ul li {
 .section7 {
   grid-area: section7;
   display: grid;
+  padding: 1rem;
 }
 
 /* Section 8 */
@@ -246,6 +248,7 @@ nav ul ul li {
 .section9 {
   grid-area: section9;
   display: grid;
+  padding: 1rem;
 }
 
 /* Section 10 */
